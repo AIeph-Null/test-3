@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 0cf29dcf79ef86b43b5bf5a9772ba70e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 473a1bda7a1dc8547b3c5047c0cfc930, type: 3}
+  autoDetectRange: 1
+  manualMinHeight: 0
+  manualMaxHeight: 500

@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/my stuff/game objects/Main vr scene.unity
+    path: Assets/my stuff/temp/Main vr scene.unity
     guid: 5ec754bed1516894ca6ab24f6ee4cc1f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
