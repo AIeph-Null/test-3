@@ -242,7 +242,10 @@ Material:
     - _TransparentZWrite: 0
     - _UseShadowThreshold: 0
     - _WorkflowMode: 1
+<<<<<<< Updated upstream
     - _XRMotionVectorsPass: 1
+=======
+>>>>>>> Stashed changes
     - _ZTest: 4
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 3
