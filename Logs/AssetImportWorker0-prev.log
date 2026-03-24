@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.4f1 (fdd3b8998ec4) revision 16634808'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-aditi" at "2026-03-16T10:44:15.6827479Z"
 OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 15706 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-aditi" at "2026-03-23T14:01:23.6891721Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-03-16T10:44:15Z
+Date: 2026-03-23T14:01:23Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.4f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/Users/aditi/Documents/Uni/V26/Eit/test-3
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55863
+58144
 -licensingIpc
 LicenseClient-aditi
 -job-worker-count
@@ -67,16 +67,16 @@ C:/Users/aditi/Documents/Uni/V26/Eit/test-3
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [19608]  Target information:
+Player connection [45336]  Target information:
 
-Player connection [19608]  * "[IP] 100.64.0.35 [Port] 0 [Flags] 2 [Guid] 2866862524 [EditorId] 2866862524 [Version] 1048832 [Id] WindowsEditor(7,Aditi_Deshp) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [45336]  * "[IP] 172.18.208.1 [Port] 0 [Flags] 2 [Guid] 2066859518 [EditorId] 2066859518 [Version] 1048832 [Id] WindowsEditor(7,Aditi_Deshp) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [19608]  * "[IP] 10.2.0.2 [Port] 0 [Flags] 2 [Guid] 2866862524 [EditorId] 2866862524 [Version] 1048832 [Id] WindowsEditor(7,Aditi_Deshp) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [45336]  * "[IP] 100.64.0.35 [Port] 0 [Flags] 2 [Guid] 2066859518 [EditorId] 2066859518 [Version] 1048832 [Id] WindowsEditor(7,Aditi_Deshp) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [19608]  * "[IP] 10.22.79.46 [Port] 0 [Flags] 2 [Guid] 2866862524 [EditorId] 2866862524 [Version] 1048832 [Id] WindowsEditor(7,Aditi_Deshp) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [45336]  * "[IP] 10.250.218.128 [Port] 0 [Flags] 2 [Guid] 2066859518 [EditorId] 2066859518 [Version] 1048832 [Id] WindowsEditor(7,Aditi_Deshp) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [19608] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [19608] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [45336] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [45336] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -88,16 +88,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.4+4293ba1
-  Session Id:              b724f22a3bf04a138412a37ed118bafc
-  Correlation Id:          0601ab7064b55bbf22959324a561ce89
-  External correlation Id: 2872678471775607321
-  Machine Id:              uxN+hw7Mckke01P8Jcfu2hd01Ho=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-aditi" (connect: 0.00s, validation: 0.00s, handshake: 1.77s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-aditi-notifications" at "2026-03-16T10:44:17.4591843Z"
-[Licensing::Module] Licensing Background thread has ended after 1.78s
-Refreshing native plugins compatible for Editor in 1918.81 ms, found 10 plugins.
+Refreshing native plugins compatible for Editor in 76.30 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.4f1 (fdd3b8998ec4)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.4f1/Editor/Data/Resources/UnitySubsystems
@@ -109,11 +100,22 @@ Direct3D:
     Vendor:   ATI
     VRAM:     7853 MB
     Driver:   31.0.14076.3
+Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              b38115b2a6474c139b999e8c3d5d8301
+  Correlation Id:          4f6c2c03b8baa0d2ffa81403fa4148c5
+  External correlation Id: 6122353011833760047
+  Machine Id:              uxN+hw7Mckke01P8Jcfu2hd01Ho=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-aditi" (connect: 0.00s, validation: 0.00s, handshake: 1.87s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-aditi-notifications" at "2026-03-23T14:01:25.5644647Z"
+[Licensing::Module] Licensing Background thread has ended after 1.88s
+Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56184
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56804
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
@@ -130,40 +132,40 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.4f1/E
   Expiration: Unlimited
 Trying to register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.4f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll (that doesn't exist). Retrying without overrides.
 Platform support module is not available: C:/Program Files/Unity/Hub/Editor/6000.3.4f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.178124 seconds.
-- Loaded All Assemblies, in 16.160 seconds
+Registered in 0.009198 seconds.
+- Loaded All Assemblies, in  0.810 seconds
 Native extension for WindowsStandalone target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.590 seconds
-Domain Reload Profiling: 16748ms
-	BeginReloadAssembly (13573ms)
+- Finished resetting the current domain, in  0.782 seconds
+Domain Reload Profiling: 1589ms
+	BeginReloadAssembly (318ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (689ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (248ms)
-	LoadAllAssembliesAndSetupDomain (1633ms)
-		LoadAssemblies (13568ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (62ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (96ms)
+	LoadAllAssembliesAndSetupDomain (309ms)
+		LoadAssemblies (307ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1628ms)
-			TypeCache.Refresh (1626ms)
-				TypeCache.ScanAssembly (1252ms)
+		AnalyzeDomain (304ms)
+			TypeCache.Refresh (301ms)
+				TypeCache.ScanAssembly (274ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (591ms)
+	FinalizeReload (783ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (528ms)
+		SetupLoadedEditorAssemblies (683ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (53ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (122ms)
-			ProcessInitializeOnLoadAttributes (217ms)
-			ProcessInitializeOnLoadMethodAttributes (130ms)
+			InitializePlatformSupportModulesInManaged (83ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (165ms)
+			ProcessInitializeOnLoadAttributes (278ms)
+			ProcessInitializeOnLoadMethodAttributes (148ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -183,9 +185,53 @@ Begin MonoManager ReloadAssembly
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in 18.234 seconds
-Refreshing native plugins compatible for Editor in 13.35 ms, found 10 plugins.
+- Loaded All Assemblies, in  1.704 seconds
+Refreshing native plugins compatible for Editor in 13.18 ms, found 10 plugins.
 Native extension for WindowsStandalone target not found
+Initializing Mesh Terrain Editor v4.0.0b1 on Unity 6000.3.4f1...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:⁬⁯‫⁮​‍⁯‏‭‪​‭‌⁯‫‏‫⁫‪‬‎⁪‍⁭‪‮‎‭‭‫‭​⁬⁭‬⁭‏‬‏‎‮ (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_BK57FowBFxgwhLd64I4lOTbiX2B_ (bool)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_yZ0KkA7QWoBI4owQXGQsH7mtOid_ ()
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[MTE]Cannot find Amplify Shader Editor, features based on ASE might be disabled.
+Please upgrade ASE to latest version and restart Unity.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+MTE.MTEDebug:⁪‌⁭‍‬⁫⁯⁪‌‮⁫⁯‬‎‏‭‌‍⁯⁮⁯‎​⁮⁭⁮⁪⁮⁭‍‏⁯‪⁪‎⁭‏‍​‎‮ (object)
+MTE.MTEDebug:LogWarning (string)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_BK57FowBFxgwhLd64I4lOTbiX2B_ (bool)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_yZ0KkA7QWoBI4owQXGQsH7mtOid_ ()
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Initializing Mesh Terrain Editor...Done
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:⁬⁯‫⁮​‍⁯‏‭‪​‭‌⁯‫‏‫⁫‪‬‎⁪‍⁭‪‮‎‭‭‫‭​⁬⁭‬⁭‏‬‏‎‮ (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_BK57FowBFxgwhLd64I4lOTbiX2B_ (bool)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_yZ0KkA7QWoBI4owQXGQsH7mtOid_ ()
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -201,39 +247,39 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.625 seconds
-Domain Reload Profiling: 20850ms
-	BeginReloadAssembly (200ms)
+- Finished resetting the current domain, in  2.020 seconds
+Domain Reload Profiling: 3716ms
+	BeginReloadAssembly (236ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (17915ms)
-		LoadAssemblies (17189ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (1329ms)
+		LoadAssemblies (894ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (834ms)
-			TypeCache.Refresh (717ms)
-				TypeCache.ScanAssembly (696ms)
-			BuildScriptInfoCaches (94ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (2626ms)
+		AnalyzeDomain (561ms)
+			TypeCache.Refresh (403ms)
+				TypeCache.ScanAssembly (377ms)
+			BuildScriptInfoCaches (132ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (2021ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1497ms)
+		SetupLoadedEditorAssemblies (1648ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (224ms)
-			ProcessInitializeOnLoadAttributes (945ms)
-			ProcessInitializeOnLoadMethodAttributes (311ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (256ms)
+			ProcessInitializeOnLoadAttributes (1021ms)
+			ProcessInitializeOnLoadMethodAttributes (354ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
 WARNING: Shader Unsupported: 'HDRP/TerrainLit' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -246,74 +292,70 @@ WARNING: Shader If subshaders removal was intentional, you may have forgotten tu
 WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 15.30 ms, found 10 plugins.
+Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
+Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 14.80 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 196 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9521 unused Assets / (27.9 MB). Loaded Objects now: 10363.
-Memory consumption went from 242.0 MB to 214.2 MB.
-Total: 28.904300 ms (FindLiveObjects: 1.682400 ms CreateObjectMapping: 1.884100 ms MarkObjects: 10.658600 ms  DeleteObjects: 14.676700 ms)
+Unloading 9572 unused Assets / (26.7 MB). Loaded Objects now: 10575.
+Memory consumption went from 381.0 MB to 354.3 MB.
+Total: 26.203600 ms (FindLiveObjects: 1.467300 ms CreateObjectMapping: 1.809800 ms MarkObjects: 11.776500 ms  DeleteObjects: 11.147700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 162458.934533 seconds.
-  path: Assets/my stuff/Terrain/Terrain/NewBrush 2.brush
-  artifactKey: Guid(f655e087d88597f4f8d7624ad8cc97ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/my stuff/Terrain/Terrain/NewBrush 2.brush using Guid(f655e087d88597f4f8d7624ad8cc97ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '682a340c7756c105fbe367eb5fe7d05d') in 0.1026546 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 319234.486799 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 6.asset
+  artifactKey: Guid(1c305c8bf9242b944b830318da521288) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 6.asset using Guid(1c305c8bf9242b944b830318da521288) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1b23af03e4ab2246c378f61095c36062') in 0.1520508 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3091.546719 seconds.
-  path: Assets/Editor
-  artifactKey: Guid(8aac320fd2f89894f81a85fd168e0dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor using Guid(8aac320fd2f89894f81a85fd168e0dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9241eff1b5fb886072418eb5f09bfcbd') in 0.0109441 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000027 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Lower 6.asset
+  artifactKey: Guid(f342940b0b10f5c41bdd7ca16ae4a6a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Lower 6.asset using Guid(f342940b0b10f5c41bdd7ca16ae4a6a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7e41e9b6ab8176d4bc7be3fc5f089d06') in 0.0423878 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.759536 seconds.
-  path: Assets/Editor
-  artifactKey: Guid(8aac320fd2f89894f81a85fd168e0dd4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Editor using Guid(8aac320fd2f89894f81a85fd168e0dd4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f6ecf05a4a5f6e4dddf945b321365795') in 0.1899209 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Prepare
-WARNING: Shader Unsupported: 'HDRP/TerrainLit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'HDRP/TerrainLit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 13.67 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 191 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9479 unused Assets / (26.1 MB). Loaded Objects now: 10360.
-Memory consumption went from 242.1 MB to 216.0 MB.
-Total: 63.282500 ms (FindLiveObjects: 2.248100 ms CreateObjectMapping: 2.249000 ms MarkObjects: 46.869200 ms  DeleteObjects: 11.912700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 25.415749 seconds.
-  path: Assets/Editor/TrimTerrainBottomWindow.cs
-  artifactKey: Guid(592e7031a20021e4e8f36620b8e21b21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Editor/TrimTerrainBottomWindow.cs using Guid(592e7031a20021e4e8f36620b8e21b21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3b024c00985351fb36e72752ec39ebba') in 0.0777851 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 13.867888 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Lower 7.asset
+  artifactKey: Guid(3b71d97ada761fa47b048ed80ce58d70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Lower 7.asset using Guid(3b71d97ada761fa47b048ed80ce58d70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3a8a14309b546b502e44697b409bb76c') in 0.0373357 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Editor/TrimTerrainBottomWindow.cs
-  artifactKey: Guid(592e7031a20021e4e8f36620b8e21b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/TrimTerrainBottomWindow.cs using Guid(592e7031a20021e4e8f36620b8e21b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de46a7a3b65657427287d73cc6e26dba') in 0.0009915 seconds
+  Time since last request: 0.000027 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 6.asset
+  artifactKey: Guid(1c305c8bf9242b944b830318da521288) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 6.asset using Guid(1c305c8bf9242b944b830318da521288) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '740310115e59a932d00dad4bebf178bd') in 0.0414093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 7.asset
+  artifactKey: Guid(d1952b6fb3a90ae43b23cdec84611cfc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 7.asset using Guid(d1952b6fb3a90ae43b23cdec84611cfc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4988af4e05fa7aa98c43c8e6b9f71ef6') in 0.0396065 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Lower 6.asset
+  artifactKey: Guid(f342940b0b10f5c41bdd7ca16ae4a6a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Lower 6.asset using Guid(f342940b0b10f5c41bdd7ca16ae4a6a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0e94b962bc00c0252e41c676451d9739') in 0.0325927 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 448.791551 seconds.
+  path: Assets/Editor/TerrainSplitIntoTwoWindow.cs
+  artifactKey: Guid(f5e0a7e954b33084a9e91acaea45b954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/TerrainSplitIntoTwoWindow.cs using Guid(f5e0a7e954b33084a9e91acaea45b954) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7d909a79571c1191be1cebd609532df1') in 0.0012003 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
@@ -330,9 +372,53 @@ Begin MonoManager ReloadAssembly
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  1.746 seconds
-Refreshing native plugins compatible for Editor in 30.37 ms, found 10 plugins.
+- Loaded All Assemblies, in  1.471 seconds
+Refreshing native plugins compatible for Editor in 21.50 ms, found 10 plugins.
 Native extension for WindowsStandalone target not found
+Initializing Mesh Terrain Editor v4.0.0b1 on Unity 6000.3.4f1...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:⁬⁯‫⁮​‍⁯‏‭‪​‭‌⁯‫‏‫⁫‪‬‎⁪‍⁭‪‮‎‭‭‫‭​⁬⁭‬⁭‏‬‏‎‮ (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_BK57FowBFxgwhLd64I4lOTbiX2B_ (bool)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_yZ0KkA7QWoBI4owQXGQsH7mtOid_ ()
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[MTE]Cannot find Amplify Shader Editor, features based on ASE might be disabled.
+Please upgrade ASE to latest version and restart Unity.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+MTE.MTEDebug:⁪‌⁭‍‬⁫⁯⁪‌‮⁫⁯‬‎‏‭‌‍⁯⁮⁯‎​⁮⁭⁮⁪⁮⁭‍‏⁯‪⁪‎⁭‏‍​‎‮ (object)
+MTE.MTEDebug:LogWarning (string)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_BK57FowBFxgwhLd64I4lOTbiX2B_ (bool)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_yZ0KkA7QWoBI4owQXGQsH7mtOid_ ()
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Initializing Mesh Terrain Editor...Done
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:⁬⁯‫⁮​‍⁯‏‭‪​‭‌⁯‫‏‫⁫‪‬‎⁪‍⁭‪‮‎‭‭‫‭​⁬⁭‬⁭‏‬‏‎‮ (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_BK57FowBFxgwhLd64I4lOTbiX2B_ (bool)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_yZ0KkA7QWoBI4owQXGQsH7mtOid_ ()
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
@@ -343,39 +429,39 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.776 seconds
-Domain Reload Profiling: 3526ms
-	BeginReloadAssembly (526ms)
+- Finished resetting the current domain, in  2.211 seconds
+Domain Reload Profiling: 3684ms
+	BeginReloadAssembly (355ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (19ms)
+		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (193ms)
-	RebuildCommonClasses (64ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (1091ms)
-		LoadAssemblies (804ms)
+		CreateAndSetChildDomain (98ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (1002ms)
+		LoadAssemblies (712ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (448ms)
-			TypeCache.Refresh (19ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (392ms)
-			ResolveRequiredComponents (24ms)
-	FinalizeReload (1777ms)
+		AnalyzeDomain (427ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (380ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (2212ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1385ms)
+		SetupLoadedEditorAssemblies (1881ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (10ms)
-			BeforeProcessingInitializeOnLoad (276ms)
-			ProcessInitializeOnLoadAttributes (686ms)
-			ProcessInitializeOnLoadMethodAttributes (399ms)
-			AfterProcessingInitializeOnLoad (10ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (272ms)
+			ProcessInitializeOnLoadAttributes (1041ms)
+			ProcessInitializeOnLoadMethodAttributes (545ms)
+			AfterProcessingInitializeOnLoad (12ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (29ms)
+		AwakeInstancesAfterBackupRestoration (37ms)
 WARNING: Shader Unsupported: 'HDRP/TerrainLit' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -388,20 +474,452 @@ WARNING: Shader If subshaders removal was intentional, you may have forgotten tu
 WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 23.37 ms, found 10 plugins.
+Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
+Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
+Refreshing native plugins compatible for Editor in 20.63 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 191 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9520 unused Assets / (28.9 MB). Loaded Objects now: 10388.
-Memory consumption went from 253.1 MB to 224.2 MB.
-Total: 33.238800 ms (FindLiveObjects: 3.290100 ms CreateObjectMapping: 2.767200 ms MarkObjects: 11.890400 ms  DeleteObjects: 15.289000 ms)
+Unloading 9570 unused Assets / (28.1 MB). Loaded Objects now: 10594.
+Memory consumption went from 420.8 MB to 392.7 MB.
+Total: 35.093400 ms (FindLiveObjects: 2.438100 ms CreateObjectMapping: 2.614800 ms MarkObjects: 12.140100 ms  DeleteObjects: 17.897400 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 32.525228 seconds.
-  path: Assets/Editor/TrimTerrainBottomWindow.cs
-  artifactKey: Guid(592e7031a20021e4e8f36620b8e21b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/TrimTerrainBottomWindow.cs using Guid(592e7031a20021e4e8f36620b8e21b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd670c2489fbad4cdff931874f628b081') in 0.0043355 seconds
+  Time since last request: 107.118865 seconds.
+  path: Assets/Editor/TerrainSplitIntoTwoWindow.cs
+  artifactKey: Guid(f5e0a7e954b33084a9e91acaea45b954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/TerrainSplitIntoTwoWindow.cs using Guid(f5e0a7e954b33084a9e91acaea45b954) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '82856e7e4ab4f323cf34f20b259c1fea') in 0.0049149 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 367.771365 seconds.
+  path: Assets/Editor/TerrainToMeshExporter.cs
+  artifactKey: Guid(145007e70b5995447a16039c7bebca65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/TerrainToMeshExporter.cs using Guid(145007e70b5995447a16039c7bebca65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7244f1a5bd20f06d372cee3eb3e53785') in 0.0015476 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'HDRP/TerrainLit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'HDRP/TerrainLit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
+Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
+Refreshing native plugins compatible for Editor in 13.21 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 191 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9528 unused Assets / (24.3 MB). Loaded Objects now: 10581.
+Memory consumption went from 391.0 MB to 366.8 MB.
+Total: 23.195700 ms (FindLiveObjects: 1.440400 ms CreateObjectMapping: 1.952700 ms MarkObjects: 9.199300 ms  DeleteObjects: 10.600700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-74UY-HSSE-6QXY-9V29-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 1375429893518-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in  1.326 seconds
+Refreshing native plugins compatible for Editor in 12.20 ms, found 10 plugins.
+Native extension for WindowsStandalone target not found
+Initializing Mesh Terrain Editor v4.0.0b1 on Unity 6000.3.4f1...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:⁬⁯‫⁮​‍⁯‏‭‪​‭‌⁯‫‏‫⁫‪‬‎⁪‍⁭‪‮‎‭‭‫‭​⁬⁭‬⁭‏‬‏‎‮ (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_BK57FowBFxgwhLd64I4lOTbiX2B_ (bool)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_yZ0KkA7QWoBI4owQXGQsH7mtOid_ ()
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[MTE]Cannot find Amplify Shader Editor, features based on ASE might be disabled.
+Please upgrade ASE to latest version and restart Unity.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+MTE.MTEDebug:⁪‌⁭‍‬⁫⁯⁪‌‮⁫⁯‬‎‏‭‌‍⁯⁮⁯‎​⁮⁭⁮⁪⁮⁭‍‏⁯‪⁪‎⁭‏‍​‎‮ (object)
+MTE.MTEDebug:LogWarning (string)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_BK57FowBFxgwhLd64I4lOTbiX2B_ (bool)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_yZ0KkA7QWoBI4owQXGQsH7mtOid_ ()
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Initializing Mesh Terrain Editor...Done
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:⁬⁯‫⁮​‍⁯‏‭‪​‭‌⁯‫‏‫⁫‪‬‎⁪‍⁭‪‮‎‭‭‫‭​⁬⁭‬⁭‏‬‏‎‮ (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_BK57FowBFxgwhLd64I4lOTbiX2B_ (bool)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_yZ0KkA7QWoBI4owQXGQsH7mtOid_ ()
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.918 seconds
+Domain Reload Profiling: 3244ms
+	BeginReloadAssembly (306ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (80ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (914ms)
+		LoadAssemblies (668ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (362ms)
+			TypeCache.Refresh (16ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (325ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1918ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1673ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (256ms)
+			ProcessInitializeOnLoadAttributes (970ms)
+			ProcessInitializeOnLoadMethodAttributes (433ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+WARNING: Shader Unsupported: 'HDRP/TerrainLit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'HDRP/TerrainLit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
+Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
+Refreshing native plugins compatible for Editor in 24.54 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 191 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9569 unused Assets / (26.8 MB). Loaded Objects now: 10597.
+Memory consumption went from 420.8 MB to 394.0 MB.
+Total: 38.534300 ms (FindLiveObjects: 2.675600 ms CreateObjectMapping: 3.148700 ms MarkObjects: 13.688500 ms  DeleteObjects: 19.017900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 444.748145 seconds.
+  path: Assets/Editor/TerrainSplitIntoTwoWindow.cs
+  artifactKey: Guid(f5e0a7e954b33084a9e91acaea45b954) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Editor/TerrainSplitIntoTwoWindow.cs using Guid(f5e0a7e954b33084a9e91acaea45b954) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '02b1103f12bdf59fcc55d2fd044536c2') in 0.1162901 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 9_Lower.asset
+  artifactKey: Guid(a75430d39256c874f8422e6f3fcf45e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 9_Lower.asset using Guid(a75430d39256c874f8422e6f3fcf45e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '31d0fd2845fc0352073ae6f5a3d467cb') in 0.0708207 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 8.asset
+  artifactKey: Guid(ebcc27781fdb3cd42929f506e57b10d3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 8.asset using Guid(ebcc27781fdb3cd42929f506e57b10d3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9fe696413547afafe16ea67b446306f0') in 0.0381532 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 8_Upper.asset
+  artifactKey: Guid(d50813350e8ba5b4fae0a9fc10b254cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 8_Upper.asset using Guid(d50813350e8ba5b4fae0a9fc10b254cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '639755a2d9ebb440ced9a8f96431138b') in 0.0378728 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Lower 7.asset
+  artifactKey: Guid(3b71d97ada761fa47b048ed80ce58d70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Lower 7.asset using Guid(3b71d97ada761fa47b048ed80ce58d70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ea0384b82879c2a8aa92ed8e03387792') in 0.0338825 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 9.asset
+  artifactKey: Guid(acb048fe8388cbc4ea930c5100d22ebb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 9.asset using Guid(acb048fe8388cbc4ea930c5100d22ebb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '33271261177788c64e09775e6efc5940') in 0.0364806 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 9_Upper_Lower.asset
+  artifactKey: Guid(646969b4bf7e361478162b0fd0894af1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 9_Upper_Lower.asset using Guid(646969b4bf7e361478162b0fd0894af1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7f1961636fba802cd31ec55c0974aea8') in 0.0379812 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 7.asset
+  artifactKey: Guid(d1952b6fb3a90ae43b23cdec84611cfc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 7.asset using Guid(d1952b6fb3a90ae43b23cdec84611cfc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f479782be5a2e312c1c62770c15f6890') in 0.0564696 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Lower 8.asset
+  artifactKey: Guid(a7e4766662af2534dac4f53985610cd0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Lower 8.asset using Guid(a7e4766662af2534dac4f53985610cd0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9d50f85c2f32ee63afb066c575b8bb95') in 0.0549512 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 9_Upper_Upper.asset
+  artifactKey: Guid(285d89379d3afc34d89fa18eb8ef67f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 9_Upper_Upper.asset using Guid(285d89379d3afc34d89fa18eb8ef67f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3a7c4aa72dfbd2c8f94bc28222be20b8') in 0.0345364 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 8_Upper_Upper.asset
+  artifactKey: Guid(f072b119acaabca47a0507badfd19e52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 8_Upper_Upper.asset using Guid(f072b119acaabca47a0507badfd19e52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd150987fe250e80ef0e648ea48f822fe') in 0.0388195 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 8_Upper_Lower.asset
+  artifactKey: Guid(c8e20e395199b1442b4496f9cb91acec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 8_Upper_Lower.asset using Guid(c8e20e395199b1442b4496f9cb91acec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e674ffb81576ba4a5ebe2dd98f846743') in 0.0365823 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Lower 8_Upper.asset
+  artifactKey: Guid(2a2cbd1729405cf48a7759e5deaba6d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Lower 8_Upper.asset using Guid(2a2cbd1729405cf48a7759e5deaba6d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '210c3b4a306113c7ab60dd7670be58f6') in 0.037336 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Lower 9.asset
+  artifactKey: Guid(b770b284d39757f47a01112941af0ea0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Lower 9.asset using Guid(b770b284d39757f47a01112941af0ea0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '06ac068f0b84618eba10b45c8e7bd418') in 0.0349352 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 9_Upper.asset
+  artifactKey: Guid(a5ceda179225ede478d8d193d4641b17) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 9_Upper.asset using Guid(a5ceda179225ede478d8d193d4641b17) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e8641553dbc40c7a293e31fe59220874') in 0.0461794 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Lower 8_Lower.asset
+  artifactKey: Guid(245a2fe885980994889c421ff52dba73) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Lower 8_Lower.asset using Guid(245a2fe885980994889c421ff52dba73) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dbff55de355851680ea2e89b52e917ff') in 0.0339722 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 8_Lower.asset
+  artifactKey: Guid(8ac66ee485458dd4d8ef5be9684fc5f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 8_Lower.asset using Guid(8ac66ee485458dd4d8ef5be9684fc5f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f121f771ba83d21c9a518a6c37dded11') in 0.0514709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 139.701834 seconds.
+  path: Assets/Editor/New Material.mat
+  artifactKey: Guid(c82d427ab27cdb8428f50820f4033d90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Editor/New Material.mat using Guid(c82d427ab27cdb8428f50820f4033d90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '97e5b3a9923808e8fc235ef9bd731b14') in 0.0418578 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 9_Upper_Lower.asset
+  artifactKey: Guid(646969b4bf7e361478162b0fd0894af1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 9_Upper_Lower.asset using Guid(646969b4bf7e361478162b0fd0894af1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'de68f0e4928767c3cf963bc54a34b5dc') in 0.0302144 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 9_Upper_Upper.asset
+  artifactKey: Guid(285d89379d3afc34d89fa18eb8ef67f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Terrain/Ekstrahert Geirangerfjord fil_TerrainData_Upper 9_Upper_Upper.asset using Guid(285d89379d3afc34d89fa18eb8ef67f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6d0923efd435403d6108375e57dd5811') in 0.032766 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 449.623927 seconds.
+  path: Assets/Scenes/Main vr scene
+  artifactKey: Guid(5debe8737d53d604b945fa8c67a15700) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Main vr scene using Guid(5debe8737d53d604b945fa8c67a15700) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6b6050f80cc4c046f0383d253712b772') in 0.0244405 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Editor/New Material.mat
+  artifactKey: Guid(c82d427ab27cdb8428f50820f4033d90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Editor/New Material.mat using Guid(c82d427ab27cdb8428f50820f4033d90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '335732fd3f0355860482bc2c560be011') in 0.0239343 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Scenes/Main vr scene/Box Volume Profile.asset
+  artifactKey: Guid(88fe8d9cad1852e409e5172b99193f3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Main vr scene/Box Volume Profile.asset using Guid(88fe8d9cad1852e409e5172b99193f3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'feaab7d678f72c902bbf94c23c2cb777') in 0.0203322 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.634016 seconds.
+  path: Assets/Scenes/Main vr scene/Box Volume Profile.asset
+  artifactKey: Guid(88fe8d9cad1852e409e5172b99193f3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Main vr scene/Box Volume Profile.asset using Guid(88fe8d9cad1852e409e5172b99193f3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a77589b9556fe147af3efbe181064327') in 0.0210638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.403615 seconds.
+  path: Assets/Scenes/Main vr scene/Box Volume Profile.asset
+  artifactKey: Guid(88fe8d9cad1852e409e5172b99193f3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Main vr scene/Box Volume Profile.asset using Guid(88fe8d9cad1852e409e5172b99193f3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '903fb7989263693fa1fd5fe20c5df090') in 0.0200375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.794987 seconds.
+  path: Assets/Scenes/Main vr scene/Box Volume Profile.asset
+  artifactKey: Guid(88fe8d9cad1852e409e5172b99193f3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Main vr scene/Box Volume Profile.asset using Guid(88fe8d9cad1852e409e5172b99193f3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4de523f2f25dcfbecfaeed48d28d62ba') in 0.0190328 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.186004 seconds.
+  path: Assets/Scenes/Main vr scene/Box Volume Profile.asset
+  artifactKey: Guid(88fe8d9cad1852e409e5172b99193f3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Main vr scene/Box Volume Profile.asset using Guid(88fe8d9cad1852e409e5172b99193f3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '87d24a9c8c4054ecf413619754ae113e') in 0.0176212 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 987.268775 seconds.
+  path: Assets/my stuff
+  artifactKey: Guid(cc252ac755b06b242a17035d2f18d3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/my stuff using Guid(cc252ac755b06b242a17035d2f18d3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '10212754c9173aed867a7191fede288f') in 0.0050976 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.049419 seconds.
+  path: Assets/my stuff/Terrain
+  artifactKey: Guid(449aee1833cea96439f65f8a1a39920b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/my stuff/Terrain using Guid(449aee1833cea96439f65f8a1a39920b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e0536e66b1667543a7f52bba9285d07') in 0.0024586 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'HDRP/TerrainLit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'HDRP/TerrainLit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
+Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
+Refreshing native plugins compatible for Editor in 31.01 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 191 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9530 unused Assets / (25.7 MB). Loaded Objects now: 10586.
+Memory consumption went from 391.3 MB to 365.6 MB.
+Total: 132.477000 ms (FindLiveObjects: 3.176700 ms CreateObjectMapping: 2.316000 ms MarkObjects: 106.268600 ms  DeleteObjects: 20.712400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 16.938025 seconds.
+  path: Assets/my stuff/Terrain/Underwater.cs
+  artifactKey: Guid(6bf4968b2e94e9a448178a013ea9da2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/my stuff/Terrain/Underwater.cs using Guid(6bf4968b2e94e9a448178a013ea9da2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c5383643a869fbea07e12c78e897575') in 0.0028396 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/my stuff/Terrain/Underwater.cs
+  artifactKey: Guid(6bf4968b2e94e9a448178a013ea9da2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Underwater.cs using Guid(6bf4968b2e94e9a448178a013ea9da2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8a8f5708980ba75b8650fd3e7ef4da61') in 0.0199901 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
@@ -418,9 +936,53 @@ Begin MonoManager ReloadAssembly
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  2.728 seconds
-Refreshing native plugins compatible for Editor in 45.54 ms, found 10 plugins.
+- Loaded All Assemblies, in  3.875 seconds
+Refreshing native plugins compatible for Editor in 30.06 ms, found 10 plugins.
 Native extension for WindowsStandalone target not found
+Initializing Mesh Terrain Editor v4.0.0b1 on Unity 6000.3.4f1...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:⁬⁯‫⁮​‍⁯‏‭‪​‭‌⁯‫‏‫⁫‪‬‎⁪‍⁭‪‮‎‭‭‫‭​⁬⁭‬⁭‏‬‏‎‮ (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_BK57FowBFxgwhLd64I4lOTbiX2B_ (bool)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_yZ0KkA7QWoBI4owQXGQsH7mtOid_ ()
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[MTE]Cannot find Amplify Shader Editor, features based on ASE might be disabled.
+Please upgrade ASE to latest version and restart Unity.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+MTE.MTEDebug:⁪‌⁭‍‬⁫⁯⁪‌‮⁫⁯‬‎‏‭‌‍⁯⁮⁯‎​⁮⁭⁮⁪⁮⁭‍‏⁯‪⁪‎⁭‏‍​‎‮ (object)
+MTE.MTEDebug:LogWarning (string)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_BK57FowBFxgwhLd64I4lOTbiX2B_ (bool)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_yZ0KkA7QWoBI4owQXGQsH7mtOid_ ()
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Initializing Mesh Terrain Editor...Done
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:⁬⁯‫⁮​‍⁯‏‭‪​‭‌⁯‫‏‫⁫‪‬‎⁪‍⁭‪‮‎‭‭‫‭​⁬⁭‬⁭‏‬‏‎‮ (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_BK57FowBFxgwhLd64I4lOTbiX2B_ (bool)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_yZ0KkA7QWoBI4owQXGQsH7mtOid_ ()
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
@@ -431,39 +993,39 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  3.245 seconds
-Domain Reload Profiling: 5969ms
-	BeginReloadAssembly (716ms)
+- Finished resetting the current domain, in  2.487 seconds
+Domain Reload Profiling: 6365ms
+	BeginReloadAssembly (1446ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (29ms)
+		DisableScriptedObjects (96ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (164ms)
-	RebuildCommonClasses (112ms)
-	RebuildNativeTypeToScriptingClass (45ms)
-	initialDomainReloadingComplete (81ms)
-	LoadAllAssembliesAndSetupDomain (1768ms)
-		LoadAssemblies (1217ms)
+		ReleaseScriptingObjects (2ms)
+		CreateAndSetChildDomain (539ms)
+	RebuildCommonClasses (59ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (2293ms)
+		LoadAssemblies (1998ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (859ms)
-			TypeCache.Refresh (29ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (775ms)
-			ResolveRequiredComponents (40ms)
-	FinalizeReload (3246ms)
+		AnalyzeDomain (601ms)
+			TypeCache.Refresh (47ms)
+				TypeCache.ScanAssembly (3ms)
+			BuildScriptInfoCaches (505ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (2487ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2616ms)
+		SetupLoadedEditorAssemblies (2138ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (18ms)
-			BeforeProcessingInitializeOnLoad (640ms)
-			ProcessInitializeOnLoadAttributes (1265ms)
-			ProcessInitializeOnLoadMethodAttributes (674ms)
-			AfterProcessingInitializeOnLoad (13ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (415ms)
+			ProcessInitializeOnLoadAttributes (1228ms)
+			ProcessInitializeOnLoadMethodAttributes (476ms)
+			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (46ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
 WARNING: Shader Unsupported: 'HDRP/TerrainLit' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -476,19 +1038,176 @@ WARNING: Shader If subshaders removal was intentional, you may have forgotten tu
 WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 38.80 ms, found 10 plugins.
+Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
+Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
+Refreshing native plugins compatible for Editor in 17.19 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 191 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9520 unused Assets / (26.3 MB). Loaded Objects now: 10391.
-Memory consumption went from 253.1 MB to 226.8 MB.
-Total: 40.426000 ms (FindLiveObjects: 1.965000 ms CreateObjectMapping: 4.063200 ms MarkObjects: 17.160500 ms  DeleteObjects: 17.233900 ms)
+Unloading 9570 unused Assets / (28.7 MB). Loaded Objects now: 10602.
+Memory consumption went from 421.1 MB to 392.4 MB.
+Total: 30.725600 ms (FindLiveObjects: 1.919300 ms CreateObjectMapping: 1.816400 ms MarkObjects: 10.128800 ms  DeleteObjects: 16.858200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.305 seconds
+Refreshing native plugins compatible for Editor in 15.43 ms, found 10 plugins.
+Native extension for WindowsStandalone target not found
+Initializing Mesh Terrain Editor v4.0.0b1 on Unity 6000.3.4f1...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:⁬⁯‫⁮​‍⁯‏‭‪​‭‌⁯‫‏‫⁫‪‬‎⁪‍⁭‪‮‎‭‭‫‭​⁬⁭‬⁭‏‬‏‎‮ (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_BK57FowBFxgwhLd64I4lOTbiX2B_ (bool)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_yZ0KkA7QWoBI4owQXGQsH7mtOid_ ()
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[MTE]Cannot find Amplify Shader Editor, features based on ASE might be disabled.
+Please upgrade ASE to latest version and restart Unity.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+MTE.MTEDebug:⁪‌⁭‍‬⁫⁯⁪‌‮⁫⁯‬‎‏‭‌‍⁯⁮⁯‎​⁮⁭⁮⁪⁮⁭‍‏⁯‪⁪‎⁭‏‍​‎‮ (object)
+MTE.MTEDebug:LogWarning (string)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_BK57FowBFxgwhLd64I4lOTbiX2B_ (bool)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_yZ0KkA7QWoBI4owQXGQsH7mtOid_ ()
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Initializing Mesh Terrain Editor...Done
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:⁬⁯‫⁮​‍⁯‏‭‪​‭‌⁯‫‏‫⁫‪‬‎⁪‍⁭‪‮‎‭‭‫‭​⁬⁭‬⁭‏‬‏‎‮ (object)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_BK57FowBFxgwhLd64I4lOTbiX2B_ (bool)
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:_yZ0KkA7QWoBI4owQXGQsH7mtOid_ ()
+_4Lx0bEMlh0Z40TCezoxVJOBfdgU_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.935 seconds
+Domain Reload Profiling: 3242ms
+	BeginReloadAssembly (338ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (90ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (856ms)
+		LoadAssemblies (600ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (390ms)
+			TypeCache.Refresh (18ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (349ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1936ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1660ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (236ms)
+			ProcessInitializeOnLoadAttributes (964ms)
+			ProcessInitializeOnLoadMethodAttributes (446ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+WARNING: Shader Unsupported: 'HDRP/TerrainLit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'HDRP/TerrainLit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
+Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
+Refreshing native plugins compatible for Editor in 16.17 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 191 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9570 unused Assets / (25.7 MB). Loaded Objects now: 10606.
+Memory consumption went from 421.2 MB to 395.5 MB.
+Total: 28.628800 ms (FindLiveObjects: 1.860100 ms CreateObjectMapping: 2.197300 ms MarkObjects: 10.610800 ms  DeleteObjects: 13.958800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 503.057432 seconds.
-  path: Assets/Editor/TrimTerrainBottomWindow.cs
-  artifactKey: Guid(592e7031a20021e4e8f36620b8e21b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/TrimTerrainBottomWindow.cs using Guid(592e7031a20021e4e8f36620b8e21b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b55f38733d98f790c34515ff1c39d28f') in 0.0052979 seconds
+  Time since last request: 34.252260 seconds.
+  path: Assets/my stuff/Terrain/Underwater.cs
+  artifactKey: Guid(6bf4968b2e94e9a448178a013ea9da2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/my stuff/Terrain/Underwater.cs using Guid(6bf4968b2e94e9a448178a013ea9da2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e46467e695c813ccff7a4ce5ad3a2a7') in 0.0035883 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 3152.599296 seconds.
+  path: Assets/my stuff/Terrain/Underwater.cs
+  artifactKey: Guid(6bf4968b2e94e9a448178a013ea9da2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/Underwater.cs using Guid(6bf4968b2e94e9a448178a013ea9da2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7848167e35075f0fb1ea477b79ee44e9') in 2.4006666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001274 seconds.
+  path: Assets/Scenes/Main vr scene/Box Volume Profile.asset
+  artifactKey: Guid(88fe8d9cad1852e409e5172b99193f3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Main vr scene/Box Volume Profile.asset using Guid(88fe8d9cad1852e409e5172b99193f3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '17a4340788488cc83e48ef40285cdb39') in 0.1350258 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Scenes/Main vr scene.unity
+  artifactKey: Guid(5ec754bed1516894ca6ab24f6ee4cc1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Main vr scene.unity using Guid(5ec754bed1516894ca6ab24f6ee4cc1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '33b4e060b36c7415be86d6b70053cad3') in 0.2516909 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 20784.243896 seconds.
+  path: Assets/my stuff/Terrain/12266_murray_cod_v2_L2.obj
+  artifactKey: Guid(fc2d5ff779e4de24da0686c18feb4105) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/my stuff/Terrain/12266_murray_cod_v2_L2.obj using Guid(fc2d5ff779e4de24da0686c18feb4105) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '91337551b4a7c1d453b85d6ef6755c46') in 1.7426899 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 203.087403 seconds.
+  path: Assets/Scenes/Main vr scene.unity
+  artifactKey: Guid(5ec754bed1516894ca6ab24f6ee4cc1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Main vr scene.unity using Guid(5ec754bed1516894ca6ab24f6ee4cc1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '64976cb1b41527c3c66dcd0210d023e4') in 0.0981913 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 

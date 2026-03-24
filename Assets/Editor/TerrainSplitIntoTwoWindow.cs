@@ -1,19 +1,18 @@
-// Assets/Editor/TerrainSplitIntoTwoWindow.cs
-
 using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-public class TerrainSplitIntoTwoWindow : EditorWindow
+public class TerrainSplitIntoTwoBlocksWindow : EditorWindow
 {
     private float cutWorldY = 100f;
     private bool disableOriginal = true;
+    private bool clearFoliage = true;
 
-    [MenuItem("Tools/Terrain/Split Selected Terrain Into Two")]
+    [MenuItem("Tools/Terrain/Split Selected Terrain Into Two Blocks")]
     private static void Open()
     {
-        var window = GetWindow<TerrainSplitIntoTwoWindow>("Split Terrain");
-        window.minSize = new Vector2(360f, 140f);
+        var window = GetWindow<TerrainSplitIntoTwoBlocksWindow>("Split Terrain");
+        window.minSize = new Vector2(380f, 160f);
         window.ResetCutToMiddle();
     }
 
@@ -26,7 +25,7 @@ public class TerrainSplitIntoTwoWindow : EditorWindow
     {
         Terrain terrain = GetSelectedTerrain();
 
-        if (terrain == null)
+        if (terrain == null || terrain.terrainData == null)
         {
             EditorGUILayout.HelpBox("Select a Terrain GameObject first.", MessageType.Info);
             return;
@@ -40,19 +39,19 @@ public class TerrainSplitIntoTwoWindow : EditorWindow
             cutWorldY = Mathf.Lerp(minY, maxY, 0.5f);
 
         EditorGUILayout.LabelField("Selected Terrain", terrain.name);
-        EditorGUILayout.LabelField("Valid World Y Range", $"{minY:0.###}  to  {maxY:0.###}");
+        EditorGUILayout.LabelField("Valid World Y Range", $"{minY:0.###} to {maxY:0.###}");
 
         cutWorldY = EditorGUILayout.Slider("Cut World Y", cutWorldY, minY + 0.01f, maxY - 0.01f);
         disableOriginal = EditorGUILayout.Toggle("Disable Original", disableOriginal);
+        clearFoliage = EditorGUILayout.Toggle("Clear Trees / Details", clearFoliage);
 
         GUILayout.Space(8);
 
         if (GUILayout.Button("Split Terrain"))
         {
-            SplitTerrain(terrain, cutWorldY, disableOriginal);
+            SplitTerrainIntoBlocks(terrain, cutWorldY, disableOriginal, clearFoliage);
         }
 
-        GUILayout.Space(4);
         if (GUILayout.Button("Reset Cut To Middle"))
         {
             ResetCutToMiddle();
@@ -61,8 +60,7 @@ public class TerrainSplitIntoTwoWindow : EditorWindow
 
     private static Terrain GetSelectedTerrain()
     {
-        if (Selection.activeGameObject == null) return null;
-        return Selection.activeGameObject.GetComponent<Terrain>();
+        return Selection.activeGameObject ? Selection.activeGameObject.GetComponent<Terrain>() : null;
     }
 
     private void ResetCutToMiddle()
@@ -73,26 +71,19 @@ public class TerrainSplitIntoTwoWindow : EditorWindow
         cutWorldY = terrain.transform.position.y + terrain.terrainData.size.y * 0.5f;
     }
 
-    private static void SplitTerrain(Terrain source, float cutWorldY, bool disableOriginal)
+    private static void SplitTerrainIntoBlocks(Terrain source, float cutWorldY, bool disableOriginal, bool clearFoliage)
     {
-        if (source == null || source.terrainData == null)
-        {
-            Debug.LogError("No valid Terrain selected.");
-            return;
-        }
-
         TerrainData srcData = source.terrainData;
         Vector3 srcPos = source.transform.position;
         Vector3 srcSize = srcData.size;
 
-        float cutLocalY = cutWorldY - srcPos.y;
-        cutLocalY = Mathf.Clamp(cutLocalY, 0.01f, srcSize.y - 0.01f);
+        float cutLocalY = Mathf.Clamp(cutWorldY - srcPos.y, 0.01f, srcSize.y - 0.01f);
 
         int hmRes = srcData.heightmapResolution;
         float[,] srcHeights = srcData.GetHeights(0, 0, hmRes, hmRes);
 
-        float lowerHeightRange = cutLocalY;
-        float upperHeightRange = srcSize.y - cutLocalY;
+        float lowerHeightRange = Mathf.Max(0.01f, cutLocalY);
+        float upperHeightRange = Mathf.Max(0.01f, srcSize.y - cutLocalY);
 
         float[,] lowerHeights = new float[hmRes, hmRes];
         float[,] upperHeights = new float[hmRes, hmRes];
@@ -112,9 +103,13 @@ public class TerrainSplitIntoTwoWindow : EditorWindow
         }
 
         string srcAssetPath = AssetDatabase.GetAssetPath(srcData);
-        string folder = string.IsNullOrEmpty(srcAssetPath)
-            ? "Assets"
-            : Path.GetDirectoryName(srcAssetPath).Replace("\\", "/");
+        string folder = "Assets";
+        if (!string.IsNullOrEmpty(srcAssetPath))
+        {
+            string dir = Path.GetDirectoryName(srcAssetPath);
+            if (!string.IsNullOrEmpty(dir))
+                folder = dir.Replace("\\", "/");
+        }
 
         TerrainData lowerData = Object.Instantiate(srcData);
         TerrainData upperData = Object.Instantiate(srcData);
@@ -136,29 +131,15 @@ public class TerrainSplitIntoTwoWindow : EditorWindow
         upperData.SetHeights(0, 0, upperHeights);
 
 #if UNITY_2019_3_OR_NEWER
-        int holesRes = srcData.holesResolution;
-        bool[,] srcHoles = srcData.GetHoles(0, 0, holesRes, holesRes);
-        bool[,] lowerHoles = new bool[holesRes, holesRes];
-        bool[,] upperHoles = new bool[holesRes, holesRes];
-
-        for (int y = 0; y < holesRes; y++)
-        {
-            for (int x = 0; x < holesRes; x++)
-            {
-                float u = holesRes > 1 ? x / (float)(holesRes - 1) : 0f;
-                float v = holesRes > 1 ? y / (float)(holesRes - 1) : 0f;
-
-                float localHeight = srcData.GetInterpolatedHeight(u, v);
-                bool surfaceExists = srcHoles[y, x];
-
-                lowerHoles[y, x] = surfaceExists;
-                upperHoles[y, x] = surfaceExists && localHeight > cutLocalY;
-            }
-        }
-
-        lowerData.SetHoles(0, 0, lowerHoles);
-        upperData.SetHoles(0, 0, upperHoles);
+        SetAllSurface(lowerData);
+        SetAllSurface(upperData);
 #endif
+
+        if (clearFoliage)
+        {
+            ClearVegetation(lowerData);
+            ClearVegetation(upperData);
+        }
 
         Terrain lowerTerrain = CreateTerrainObject(
             source,
@@ -174,33 +155,72 @@ public class TerrainSplitIntoTwoWindow : EditorWindow
             new Vector3(srcPos.x, cutWorldY, srcPos.z)
         );
 
-        if (disableOriginal)
-            source.gameObject.SetActive(false);
+        if (clearFoliage)
+        {
+            lowerTerrain.drawTreesAndFoliage = false;
+            upperTerrain.drawTreesAndFoliage = false;
+        }
 
         lowerTerrain.Flush();
         upperTerrain.Flush();
 
-        Selection.objects = new Object[] { upperTerrain.gameObject, lowerTerrain.gameObject };
+        if (disableOriginal)
+            source.gameObject.SetActive(false);
+
+        Selection.objects = new Object[] { lowerTerrain.gameObject, upperTerrain.gameObject };
 
         Debug.Log(
             $"Split complete.\n" +
             $"Lower: {lowerTerrain.name}\n" +
             $"Upper: {upperTerrain.name}\n" +
-            $"Delete or disable '{lowerTerrain.name}' if you only want the top part."
+            $"This version keeps both halves as solid terrain tiles (no holes)."
         );
+    }
+
+#if UNITY_2019_3_OR_NEWER
+    private static void SetAllSurface(TerrainData data)
+    {
+        int res = data.holesResolution;
+        bool[,] holes = new bool[res, res];
+
+        for (int y = 0; y < res; y++)
+        {
+            for (int x = 0; x < res; x++)
+            {
+                holes[y, x] = true; // true = surface
+            }
+        }
+
+        data.SetHoles(0, 0, holes);
+    }
+#endif
+
+    private static void ClearVegetation(TerrainData data)
+    {
+        data.SetTreeInstances(new TreeInstance[0], false);
+
+        int layerCount = data.detailPrototypes != null ? data.detailPrototypes.Length : 0;
+        if (layerCount <= 0) return;
+
+        int[,] empty = new int[data.detailWidth, data.detailHeight];
+
+        for (int layer = 0; layer < layerCount; layer++)
+        {
+            data.SetDetailLayer(0, 0, layer, empty);
+        }
     }
 
     private static Terrain CreateTerrainObject(Terrain source, TerrainData data, string newName, Vector3 worldPosition)
     {
         GameObject go = Terrain.CreateTerrainGameObject(data);
         go.name = newName;
-        go.layer = source.gameObject.layer;
-        go.tag = source.gameObject.tag;
 
         if (source.transform.parent != null)
             go.transform.SetParent(source.transform.parent, true);
 
         go.transform.position = worldPosition;
+        go.layer = source.gameObject.layer;
+        go.tag = source.gameObject.tag;
 
         Terrain terrain = go.GetComponent<Terrain>();
         TerrainCollider terrainCollider = go.GetComponent<TerrainCollider>();
@@ -209,7 +229,6 @@ public class TerrainSplitIntoTwoWindow : EditorWindow
             terrainCollider.terrainData = data;
 
         CopyTerrainSettings(source, terrain);
-
         return terrain;
     }
 
@@ -220,7 +239,6 @@ public class TerrainSplitIntoTwoWindow : EditorWindow
 
         dst.drawHeightmap = src.drawHeightmap;
         dst.drawTreesAndFoliage = src.drawTreesAndFoliage;
-        dst.drawInstanced = src.drawInstanced;
 
         dst.heightmapPixelError = src.heightmapPixelError;
         dst.basemapDistance = src.basemapDistance;
@@ -234,7 +252,5 @@ public class TerrainSplitIntoTwoWindow : EditorWindow
         dst.treeMaximumFullLODCount = src.treeMaximumFullLODCount;
 
         dst.materialTemplate = src.materialTemplate;
-        dst.reflectionProbeUsage = src.reflectionProbeUsage;
-        dst.shadowCastingMode = src.shadowCastingMode;
     }
 }
