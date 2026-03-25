@@ -20,6 +20,7 @@ public class TransformWater : MonoBehaviour
     {
         ageNumber = age.value;
         if (version == 1) { //water 
+            ageNumber = (age.value/20.0f)*2 - (age2.value / 20.0f) *2;
             this.transform.position = new Vector3(150.0f, ageNumber, 100.0f);
         }
         if (version == 2) { //big iceberg 
@@ -39,5 +40,9 @@ public class TransformWater : MonoBehaviour
             ageNumber =  - 488.0f + age.value*0.3f - age2.value * 0.04f;   // -488.7  //-495
             this.transform.position = new Vector3(0.0f, ageNumber, 0.0f);
         }
-    }   //-ageNumber2/40.0f + 5.0f
+        if (version == 5)  { //water 2
+            ageNumber = -10.79f + (age.value / 20.0f) * 2 - (age2.value / 20.0f) * 2; //-10.79
+            this.transform.position = new Vector3(0.0f, ageNumber, 0.0f);
+        }
+    }   //-ageNumber2/40.0f + 5.0f //-10.79
 }
