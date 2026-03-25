@@ -13647,7 +13647,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TransformWater
   age: {fileID: 2052865829}
   ageNumber: 0
-  version: 0
 --- !u!1 &904786679
 GameObject:
   m_ObjectHideFlags: 0
@@ -21774,7 +21773,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TransformWater
   age: {fileID: 2052865829}
   ageNumber: 0
-  version: 0
 --- !u!64 &1402271776
 MeshCollider:
   m_ObjectHideFlags: 0
